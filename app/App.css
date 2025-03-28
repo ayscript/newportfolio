@@ -1,0 +1,533 @@
+.btn{
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+  background: var(--brand1);
+}
+
+.btn span{
+  color: var(--grey);
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  gap:  1rem;
+}
+
+.title h1{
+  position: relative;
+}
+
+.titleDescription{
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+.title h1::after, .title h1::before{
+  content: '';
+  position: absolute;
+  bottom: -12%;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--brand1);
+}
+
+.title h1::before{
+  left: -5%;
+}
+
+.title h1::after{
+  right: -5%;
+}
+
+.blog{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  width: 80%;
+  margin-inline: auto;
+  padding-block: .5rem;
+  border-block: 2px solid var(--white);
+  margin-bottom: 2rem;
+}
+
+.blog-texts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.blog-title{
+  color: var(--brand1);
+  margin: 0;
+}
+
+.blog-info, .blog-info div{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.blog-info, .blog-info div{
+  flex-wrap: wrap;
+}
+
+.blog-info .bold{
+  font-weight: bold;
+}
+
+.tag{
+  padding: .25rem .5rem;
+  border-radius: 16px;
+  background: var(--grey);
+}
+
+.blog-img{
+  border-radius: 4px;
+  align-self: flex-start;
+  width: 25.0%;
+}
+
+header{
+  border-bottom: 1px solid var(--grey);
+  padding-block: 1rem;
+}
+
+header *{
+  font-family: "IBM Plex Mono", monospace;
+}
+
+header ul{
+  padding-left: 0;
+}
+
+.searchcontainer{
+  position: relative;
+}
+
+#search-bar{
+  border: none;
+  padding: .75rem 1rem;
+  padding-right: 2.5rem;
+  background: var(--white);
+  border-radius: 2rem;
+  transition: all .1s ease;
+  display: none;
+}
+
+#search-bar:focus{
+  outline: 2px solid var(--brand1);
+  outline-offset: 2px;
+}
+
+button:focus{
+  outline: 2px solid var(--grey);
+}
+
+.searchBtn{
+  --searchcolor: var(--white);
+  position: static;
+  right: 3%;
+  top: 10%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  border: none;
+  background: none;
+}
+
+.headerNav{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.headerNav ul{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.links span{
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .links span{
+    display: inline;
+  }
+
+  .searchBtn{
+    --searchcolor: var(--grey);
+  }
+
+  #search-bar{
+    display: inline;
+  }
+
+  .searchBtn{
+    position: absolute;
+  }
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 2px solid var(--white);
+  padding: 24px;
+  /* width: min(40%, 350px)!important; */
+  max-width: 350px;
+  border-radius: 24px 0;
+  box-shadow:-2px -2px 0px var(--brand1);
+  /* margin-inline: auto; */
+}
+
+.card *{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  margin: 0;
+  color: #A5A5AE;
+}
+
+.card > div{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card img{
+  width: 75.0px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contacts span{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  /* background: red; */
+}
+
+.languages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.languages span{
+  padding: .25rem .5rem;
+  border-radius: 1rem;
+  background-color: var(--brand1);
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.hero > *{
+  width: 40%;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.hero h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.name{
+  color: var(--brand1);
+}
+
+.experience{
+  background: var(--bg2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(40%, 200px);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+.experience > div{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.experience > div h1{
+  color: var(--brand1);
+  font-weight: bold;
+}
+
+.aboutText h2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.aboutme{
+  background: #1A1E23;
+  background-image: url('/assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 4rem;
+}
+
+.aboutMetexts, .aboutMetexts > .name{
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0;
+}
+
+.aboutMetexts{
+  background: var(--bg1);
+  display: inline-block;
+  width: min(720px, 90%);
+  border-radius: 48px;
+  padding: 2rem;
+}
+
+.aboutBtn{
+  border: 2px solid var(--brand1);
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #1A1E2398;
+  backdrop-filter: blur(1px);
+  border-radius: 20px 0;
+  font-size: 2rem;
+}
+
+.innerDivContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerDivContainer img{
+  width: min(320px, 80%);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.innerDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: min(600px, 100%);
+}
+
+.skillcard{
+  display: flex;
+  width: min(80%, 320px);
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand2);
+  color: var(--bg1);
+  gap: 1rem;
+  border-radius: .5rem;
+  border-left: 8px solid var(--css);
+}
+
+.skillcardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+.skills{
+  background-image: url(/assets/Skills.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+.skillcard *{
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.skillchain{text-transform: uppercase;}
+
+.skillCircle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillCircleContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: auto;
+  gap: 2.5rem;
+  max-width: 240px;
+  margin-bottom: 2rem;
+}
+
+.skillCircle{
+  position: relative;
+  width: 100px;
+  aspect-ratio: 1;
+  background: var(--css);
+  border-radius: 50%;
+  display: flex;
+}
+
+.skillCircle span{
+  position: absolute;
+  bottom: -25%;
+  font-weight: bold;
+}
+
+.css{
+  color: var(--css);
+  background: var(--css);
+}
+.react{
+  color: var(--react);
+  background: var(--react);
+}
+.html{
+  color: var(--html);
+  background: var(--html);
+}
+.js{
+  color: var(--js);
+  background: var(--js);
+}
+
+.popup{
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100lvh;
+  background: #1A1E23D2;
+}
+
+.popup img{
+  width: 100%;
+  max-width: 480px;
+  transform-style: scale(0.9);
+}
+
+.certification{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cert-card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  padding: .75rem;
+  border-radius: .5rem;
+  gap: .75rem;
+  background: var(--bg2);
+  margin-inline: auto;
+}
+
+.cert-card h2{
+  /* height: 50px; */
+}
+
+.cert-card > *{
+  margin: 0;
+}
+
+.cert-card h2{
+  font-size: 1.1rem;
+}
+
+.certificateType{
+  /* margin-top: auto; */
+}
+
+.cert-link{
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  align-self: flex-start;
+  border-radius: .25rem;
+  background: var(--blue);
+}
+
+.cert-link:hover{
+  background: var(--css);
+}
+
+
+.cert-card > img{
+  border-radius: .25rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.courseProvider{
+  display: flex;
+  gap: 1rem;
+}
+
+.courseProvider span{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.footer{
+  background: var(--bg2);
+  text-align: center;
+  padding: 2rem;
+}
