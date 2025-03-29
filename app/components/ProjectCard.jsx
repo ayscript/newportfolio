@@ -47,7 +47,7 @@ function Apps() {
     description: "Project from a challenge on X (twitter)",
     languages: ["HTML", "CSS", "JavaScript"],
     imgURL: ['/analyticsdashboard.png'],
-    url: "https://olaleyeag20.github.io/Analytics-Dashboard/"
+    url: "https://ayscript.github.io/Analytics-Dashboard/"
   },
 {
     name: "Computer Repair Website",
@@ -61,21 +61,21 @@ function Apps() {
     description: "Feeling bored? consult this BOT to find what you can do",
     languages: ["HTML", "CSS", "JavaScript", "Rest API"],
     imgURL: ['/boredbot.png'],
-    url: "https://olaleyeag20.github.io/boredbot/"
+    url: "https://ayscript.github.io/boredbot/"
   },
 {
     name: "FUNAAB Tech School",
     description: "A Landing page for an imaginary school",
     languages: ["HTML", "CSS"],
     imgURL: ['/funaabschool.png'],
-    url: "https://olaleyeag20.github.io/Group8/"
+    url: "https://ayscript.github.io/Group8/"
   },
 {
     name: "Password Generator",
     description: "Generate a random password never use an insecure password again",
     languages: ["HTML", "CSS", "JavaScript"],
     imgURL: ['/randompassword.png'],
-    url: "https://olaleyeag20.github.io/password-generator/"
+    url: "https://ayscript.github.io/password-generator/"
   },
 {
     name: "Music App",
@@ -103,7 +103,7 @@ function Apps() {
     description: "A simple image slider",
     languages: ["HTML", "CSS", "JavaScript"],
     imgURL: ['/slide.png'],
-    url: "https://olaleyeag20.github.io/imageSlide/"
+    url: "https://ayscript.github.io/imageSlide/"
   },
 {
     name: "My Portfolio Webpage",
