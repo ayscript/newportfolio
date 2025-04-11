@@ -50,8 +50,8 @@
 
   .project-link {
     display: inline-block;
-    background-color: var(--css);
-    color: #ffffff;
+    background-color: var(--brand1);
+    color: rgb(11, 24, 29);
     text-decoration: none;
     padding: 6px 12px;
     border-radius: 3px;
@@ -61,7 +61,7 @@
   }
 
   .project-link:hover {
-    background-color: #0056b3;
+    background-color: var(--brand2);
   }
 
   .app {
